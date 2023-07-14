@@ -3,14 +3,14 @@ import store from "./store";
 
 const routes = [
   {
-    path: '/',
-    name: 'Login',
-    component: () => import('@/pages/Login.vue'),
+    path: "/",
+    name: "Home",
+    component: () => import("@/pages/Home.vue"),
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: () => import('@/pages/Home.vue'),
+    path: "/temp",
+    name: "Temp",
+    component: () => import("@/pages/Temp.vue"),
   },
 ]
 

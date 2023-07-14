@@ -17,6 +17,7 @@ app_license = "a"
 # include js, css files in header of web template
 # web_include_css = "/assets/todo/css/todo.css"
 # web_include_js = "/assets/todo/js/todo.js"
+web_include_js = "/assets/todo/js/todo.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "todo/public/scss/website"
