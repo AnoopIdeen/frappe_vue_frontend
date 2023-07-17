@@ -48,6 +48,8 @@ import router from "./router";
 import App from "./App.vue";
 import mitt from "mitt";
 import "./index.css";
+import { resourcesPlugin } from 'frappe-ui'
+
 
 setConfig("resourceFetcher", frappeRequest);
 const emitter = mitt();
@@ -57,6 +59,8 @@ app.config.globalProperties.emitter = emitter;
 app.use(router);
 app.use(store);
 app.use(FrappeUI);
+app.use(resourcesPlugin)
+
 app.directive("on-outside-click", onOutsideClickDirective);
 app.directive("focus", {
     mounted: (el) => el.focus(),

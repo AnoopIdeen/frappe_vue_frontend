@@ -3,6 +3,7 @@ import frappe
 def get_data():
     return frappe.db.get_all("Demo")
 
+
 @frappe.whitelist()
 def put_data(name):
     new_doc= frappe.new_doc("Demo")
